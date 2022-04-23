@@ -1,0 +1,68 @@
+body{
+	font-family: impact;
+	/*padding:0px 20px; */
+	margin: 0;
+	background-color: gray; 
+}
+
+header{
+	padding: 20px;
+	text-align: center;
+	background: black;
+	color: silver;
+}
+
+nav{
+	background: aqua;
+	display: flex;
+
+}
+
+nav a{
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-align: center;
+}
+nav a:hover{
+	background: black;
+	color: white;
+}
+
+.main{
+	display: flex;
+	flex-wrap: nowrap; 
+}
+
+.main .left-panel{
+	background: #08857f;
+	padding: 20px;
+	flex:30%;
+}
+
+.main .right-panel{
+	background: ##85ece7;
+	padding: 20px;
+	flex:70%;
+}
+footer{
+	padding: 10px;
+	text-align: center;
+	background: black;
+	color: silver;
+}
+
+.fakeimg{
+	/*background: silver;*/
+	margin: 10px;
+}
+.fakeimg img{
+	width: 100%;
+	border-radius: 100px;
+}
+
+@media screen and (max-width: 700px){
+	.main, nav{
+		flex-direction: col
+	}
+}
